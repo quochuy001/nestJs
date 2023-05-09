@@ -1,0 +1,46 @@
+### Sign Up
+POST http://localhost:3000/users/signup
+Content-Type: application/json
+
+{
+    "email": "sfsdf1111233@sdfs.com",
+    "password": "ofosomfs"
+}
+
+### Sign in
+POST  http://localhost:3000/users/signin
+Content-Type: application/json
+
+{
+    "email": "sfsdf1111233@sdfs.com",
+    "password": "ofosomfs"
+}
+
+### Sign Out
+POST http://localhost:3000/users/signout
+
+### Who Am I
+GEt  http://localhost:3000/users/whoami
+
+### Get a user
+
+GET http://localhost:3000/users/4
+
+### Get All User 
+GET http://localhost:3000/users/
+
+
+### Get Users By Email 
+GET http://localhost:3000/users?email=sfsdf@sdfs.com
+
+### Delete user 
+DELETE http://localhost:3000/users/17
+
+### Update user
+PATCH http://localhost:3000/users/3
+Content-Type: application/json
+
+{
+    "email": "aaaa@aaa.com"
+}
+

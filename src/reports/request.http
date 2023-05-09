@@ -1,0 +1,28 @@
+### Create A Report
+
+POST http://localhost:3000/reports
+Content-Type: application/json
+
+{
+    "price": 20000,
+    "made": "America",
+    "model": "Mercides",
+    "lng": 0,
+    "lat": 0,
+    "year": 2003,
+    "mileage": 23333
+}
+
+### Get Test
+GET http://localhost:3000/reports
+
+### Update Report Approval
+PATCH http://localhost:3000/reports/1
+Content-Type: application/json
+
+{
+    "approval": true
+}
+
+### Get a estimate report through string query
+GET http://localhost:3000/reports?model=Mercides&made=America&lng=0&lat=0&year=2003&mileage=23333
